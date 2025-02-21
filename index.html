@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="new-game">Again</button>
+    </header>
+    <header>
+        <h1>Guess My Number!</h1>
+        <div class="random-number">
+            <p>?</p>
+        </div>
+    </header>
+    <main>
+        <div class="game-container">
+            <div class="random-number"></div>
+            <input min="1"  max="20" type="number" name="" id="numbox" data-test-id="numberbox"> 
+            <button id="submit-guess">Guess</button>
+            <div class="feedback"></div>
+            <div class="score">
+                <p>Score: <span id="scoreValue">20</span></p>
+                <p>Highscore: <span id="highscoreValue"></span></p>
+            </div>
+          </div>
+      </main>
+  <script src="app.js"></script>
+  </body>
+  </html>
+  
