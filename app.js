@@ -6,7 +6,7 @@ const scoreValue = document.getElementById('scoreValue');
 const highScoreValue = document.getElementById('highscoreValue');
 const feedback = document.querySelector('.feedback');
 const randomNumberElement = document.querySelector('.random-number p');
-
+const body = document.querySelector('body')
 // Initialize game variables
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
@@ -19,6 +19,7 @@ function checkGuess() {
     feedback.textContent = 'Please enter a number between 1 and 20!';
   } else if (userGuess === secretNumber) {
     feedback.textContent = 'Correct!';
+    document.body.style.backgroundColor = 'blue'
     scoreValue.textContent = score;
     randomNumberElement.textContent = secretNumber;
     if (score > highScore) {
